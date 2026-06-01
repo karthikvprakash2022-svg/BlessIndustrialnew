@@ -583,7 +583,7 @@ footer {
   padding: 140px 8%;
   background:
     linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url("ff.jpg") center/cover no-repeat;
+    url("images/ff.jpg") center/cover no-repeat;
 }
 
 /* HEADER */
