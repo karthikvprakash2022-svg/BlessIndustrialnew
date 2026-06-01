@@ -409,7 +409,7 @@ footer {
   padding: 140px 8%;
   background:
     linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("abut.jpg") center/cover no-repeat;
+    url("images/abut.jpg") center/cover no-repeat;
 }
 
 .about-overlay {
@@ -723,7 +723,7 @@ footer {
   padding: 140px 8%;
   background:
     linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url("1.jpg") center/cover no-repeat;
+    url("images/1.jpg") center/cover no-repeat;
 }
 
 /* HEADER */
