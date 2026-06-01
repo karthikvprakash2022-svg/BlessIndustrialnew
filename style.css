@@ -489,7 +489,7 @@ footer {
   padding: 140px 8%;
   background:
     linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url("factory.jpg.jfif") center/cover no-repeat;
+    url("images/factory.jpg.jfif") center/cover no-repeat;
 }
 
 .services-header {
