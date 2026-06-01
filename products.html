@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Products — Bless Industrial</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <a
+      href="https://wa.me/+917994565934"
+      class="whatsapp-float"
+      target="_blank"
+    >
+      <img src="whatsapp.png" class="whatsapp-icon" />
+    </a>
+
+    <header>
+      <h1>Bless Industrial</h1>
+
+      <nav class="main-nav">
+        <span class="nav-indicator"></span>
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="products">
+      <div class="container">
+        <div class="products-header">
+          <span>OUR PRODUCTS</span>
+
+          <h2>Industrial Equipment & Materials</h2>
+
+          <p>
+            Explore our reliable industrial products designed for construction,
+            scaffolding, and infrastructure support applications.
+          </p>
+        </div>
+
+        <input
+          type="text"
+          id="productSearch"
+          placeholder="Search products..."
+          onkeyup="searchProducts()"
+          class="product-search"
+        />
+        <div class="product-info">
+          <div class="info-card">
+            <h3>Quality Products</h3>
+            <p>Durable industrial products built for long-term performance.</p>
+          </div>
+
+          <div class="info-card">
+            <h3>Reliable Supply</h3>
+            <p>Fast delivery and dependable product availability.</p>
+          </div>
+
+          <div class="info-card">
+            <h3>Custom Solutions</h3>
+            <p>Products tailored to your project requirements.</p>
+          </div>
+        </div>
+        <div class="product-grid">
+          <div class="product-card">
+            <img src="images/product1.jpg" onclick="openModal(this.src)" />
+            <h3>Adjustable Jack</h3>
+
+            <a
+              href="https://wa.me/917994565934?text=I am interested in Adjustable Jack"
+              class="product-btn"
+              target="_blank"
+            >
+              Get Quote
+            </a>
+          </div>
+
+          <div class="product-card">
+            <img src="images/product2.jpg" onclick="openModal(this.src)" />
+            <h3>Concrete Sheet</h3>
+
+            <a
+              href="https://wa.me/917994565934?text=I am interested in Concrete Sheet"
+              class="product-btn"
+              target="_blank"
+            >
+              Get Quote
+            </a>
+          </div>
+
+          <div class="product-card">
+            <img src="images/span.jpg" onclick="openModal(this.src)" />
+            <h3>Adjustable Span</h3>
+
+            <a
+              href="https://wa.me/917994565934?text=I am interested in AdjustableView Span"
+              class="product-btn"
+              target="_blank"
+            >
+              Get Quote
+            </a>
+          </div>
+
+          <div class="product-card">
+            <img src="images/product1.jpg" onclick="openModal(this.src)" />
+            <h3>Lintle</h3>
+
+            <a
+              href="https://wa.me/917994565934?text=I am interested in Lintle"
+              class="product-btn"
+              target="_blank"
+            >
+              Get Quote
+            </a>
+          </div>
+          <div class="whatsapp-contact">
+            <h2>Need Immediate Assistance?</h2>
+
+            <p>
+              Chat with us directly on WhatsApp for quick support and
+              quotations.
+            </p>
+
+            <a
+              href="https://wa.me/917994565934"
+              target="_blank"
+              class="whatsapp-btn"
+            >
+              Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product-cta">
+      <h2>Need Bulk Orders?</h2>
+
+      <p>
+        Contact Bless Industrial for bulk quantity orders, custom fabrication,
+        and project-specific industrial materials.
+      </p>
+
+      <a href="contact.html" class="product-btn"> Contact Us </a>
+    </section>
+
+    <div class="modal" id="modal">
+      <span class="close-modal" onclick="closeModal()"> ✕ </span>
+
+      <img class="modal-content" id="modalImg" />
+    </div>
+
+    <script>
+      function openModal(src) {
+        document.getElementById("modal").style.display = "flex";
+
+        document.getElementById("modalImg").src = src;
+      }
+
+      function closeModal() {
+        document.getElementById("modal").style.display = "none";
+      }
+
+      function searchProducts() {
+        let input = document
+          .getElementById("productSearch")
+          .value.toLowerCase();
+
+        let cards = document.querySelectorAll(".product-card");
+
+        cards.forEach((card) => {
+          let title = card.querySelector("h3").textContent.toLowerCase();
+
+          if (title.includes(input)) {
+            card.style.display = "block";
+          } else {
+            card.style.display = "none";
+          }
+        });
+      }
+    </script>
+    <footer class="footer reveal">
+      <div class="footer-grid">
+        <div>
+          <h3>Bless Industrial</h3>
+          <p>
+            Trusted industrial manpower, fabrication and maintenance services.
+          </p>
+        </div>
+
+        <div>
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a><br />
+          <a href="about.html">About</a><br />
+          <a href="services.html">Services</a><br />
+          <a href="products.html">Products</a><br />
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div>
+          <h4>Contact</h4>
+          <p>+91 7994565934</p>
+          <p>karthikvprakash2022@gmail.com</p>
+          <p>Sulthan Bathery, Kerala</p>
+        </div>
+      </div>
+
+      <div class="copyright">© 2026 Bless Industrial. All rights reserved.</div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
