@@ -98,7 +98,7 @@ header h1 {
       rgba(0, 0, 0, 0.72) 45%,
       rgba(0, 0, 0, 0.6) 100%
     ),
-    url("ff.jpg");
+    url("images/ff.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
