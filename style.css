@@ -47,8 +47,11 @@ header {
 }
 
 header h1 {
-  font-size: 30px;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 36px;
   font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 1px;
 }
 
 /* NAVBAR */
@@ -59,19 +62,22 @@ header h1 {
   position: relative;
 }
 
+/*outer menus color change*/
+
 .main-nav a {
+  color: white;
   text-decoration: none;
-  color: #d1d1d1;
-  font-size: 16px;
-  font-weight: 500;
-  transition: 0.3s;
-  padding-bottom: 5px;
 }
 
-.main-nav a:hover,
+.main-nav a:hover {
+  color: #d4ff14;
+}
+
 .main-nav a.active {
   color: #d4ff14;
 }
+
+/*nav color change*/
 
 .nav-indicator {
   position: absolute;
@@ -87,7 +93,7 @@ header h1 {
 /* HERO */
 
 .hero {
-  height: 100vh;
+  height: 120vh;
   display: flex;
   align-items: center;
   padding: 0 8%;
@@ -98,7 +104,7 @@ header h1 {
       rgba(0, 0, 0, 0.72) 45%,
       rgba(0, 0, 0, 0.6) 100%
     ),
-    url("images/ff.jpg");
+    url("images/12345.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -108,10 +114,12 @@ header h1 {
   max-width: 750px;
 }
 
+/*INDUSTRIAL CONTRACTING COMPANY color change*/
+
 .hero-tag {
   display: inline-block;
   padding: 10px 20px;
-  background: #d4ff14;
+  background: #0a0a0a;
   border-radius: 30px;
   font-size: 14px;
   font-weight: 600;
@@ -340,18 +348,26 @@ footer {
 
 /* WHATSAPP */
 
+/* WHATSAPP */
+
 .whatsapp-float {
   position: fixed;
   right: 25px;
   bottom: 25px;
   width: 60px;
   height: 60px;
-  z-index: 999;
+  background: transparent;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  box-shadow: none;
 }
 
 .whatsapp-icon {
-  width: 100%;
-  height: 100%;
+  width: 38px;
+  height: 38px;
 }
 
 /* REVEAL */
@@ -409,7 +425,20 @@ footer {
   padding: 140px 8%;
   background:
     linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("images/abut.jpg") center/cover no-repeat;
+    url("images/33333.jfif") center/cover no-repeat;
+}
+
+.about-banner {
+  animation: aboutZoom 2s ease;
+}
+
+@keyframes aboutZoom {
+  from {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 .about-overlay {
@@ -489,7 +518,7 @@ footer {
   padding: 140px 8%;
   background:
     linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url("images/factory.jpg.jfif") center/cover no-repeat;
+    url("images/qqq.png") center/cover no-repeat;
 }
 
 .services-header {
@@ -583,7 +612,7 @@ footer {
   padding: 140px 8%;
   background:
     linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url("images/ff.jpg") center/cover no-repeat;
+    url("ff.jpg") center/cover no-repeat;
 }
 
 /* HEADER */
@@ -723,7 +752,7 @@ footer {
   padding: 140px 8%;
   background:
     linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url("images/1.jpg") center/cover no-repeat;
+    url("1.jpg") center/cover no-repeat;
 }
 
 /* HEADER */
@@ -1013,7 +1042,7 @@ footer {
 
 .why-card:hover {
   transform: translateY(-10px);
-  border-color: #ff5e14;
+  border-color: #d4ff14;
 }
 
 .why-card h3 {
@@ -1048,9 +1077,11 @@ footer {
   transition: 0.4s;
 }
 
+/*#ff5e14*/
+
 .testimonial-card:hover {
   transform: translateY(-10px);
-  border-color: #ff5e14;
+  border-color: #d4ff14;
 }
 
 .testimonial-card p {
@@ -1058,6 +1089,8 @@ footer {
   color: #ddd;
   font-style: italic;
 }
+
+/*#ff5e14*/
 
 .testimonial-card h4 {
   margin-top: 20px;
@@ -1193,6 +1226,8 @@ header.scrolled {
   grid-template-columns: repeat(2, 1fr);
   gap: 25px;
 }
+
+/*#2e8b57*/
 
 .why-card {
   background: #111;
@@ -1486,4 +1521,20 @@ header.scrolled {
 
 .whatsapp-btn:hover {
   transform: translateY(-3px);
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-area img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.logo-area h1 {
+  margin: 0;
 }
