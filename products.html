@@ -78,11 +78,11 @@
         </div>
         <div class="product-grid">
           <div class="product-card">
-            <img src="images/product1.jpg" onclick="openModal(this.src)" />
-            <h3>Adjustable Jack</h3>
+            <img src="images/2222222.png" onclick="openModal(this.src)" />
+            <h3>Adjustable Prop (Jack)</h3>
 
             <a
-              href="https://wa.me/917994565934?text=I am interested in Adjustable Jack"
+              href="https://wa.me/917994565934?text=I am interested in Adjustable Prop (Jack)"
               class="product-btn"
               target="_blank"
             >
@@ -91,7 +91,7 @@
           </div>
 
           <div class="product-card">
-            <img src="images/product2.jpg" onclick="openModal(this.src)" />
+            <img src="images/aaa.jfif" onclick="openModal(this.src)" />
             <h3>Concrete Sheet</h3>
 
             <a
@@ -104,7 +104,7 @@
           </div>
 
           <div class="product-card">
-            <img src="images/span.jpg" onclick="openModal(this.src)" />
+            <img src="images/qqq.png" onclick="openModal(this.src)" />
             <h3>Adjustable Span</h3>
 
             <a
@@ -117,11 +117,144 @@
           </div>
 
           <div class="product-card">
-            <img src="images/product1.jpg" onclick="openModal(this.src)" />
+            <img src="images/abut.jpg" onclick="openModal(this.src)" />
             <h3>Lintle</h3>
 
             <a
               href="https://wa.me/917994565934?text=I am interested in Lintle"
+              class="product-btn"
+              target="_blank"
+            >
+              Get Quote
+            </a>
+          </div>
+          <div class="product-card">
+            <img src="images/qqq.png" onclick="openModal(this.src)" />
+            <h3>Lintel Corner Piece</h3>
+
+            <a
+              href="https://wa.me/917994565934?text=I am interested in Lintel Corner Piece"
+              class="product-btn"
+              target="_blank"
+            >
+              Get Quote
+            </a>
+          </div>
+          <div class="product-card">
+            <img src="images/qqq.png" onclick="openModal(this.src)" />
+            <h3>Lintel Sheet L Clamp</h3>
+
+            <a
+              href="https://wa.me/917994565934?text=I am interested in Lintel Sheet L Clamp"
+              class="product-btn"
+              target="_blank"
+            >
+              Get Quote
+            </a>
+          </div>
+          <div class="product-card">
+            <img src="images/qqq.png" onclick="openModal(this.src)" />
+            <h3>Concrete Mixing Unit</h3>
+
+            <a
+              href="https://wa.me/917994565934?text=I am interested in Concrete Mixing Unit"
+              class="product-btn"
+              target="_blank"
+            >
+              Get Quote
+            </a>
+          </div>
+          <div class="product-card">
+            <img src="images/qqq.png" onclick="openModal(this.src)" />
+            <h3>Kuthu Pipe</h3>
+
+            <a
+              href="https://wa.me/917994565934?text=I am interested in Kuthu Pipe"
+              class="product-btn"
+              target="_blank"
+            >
+              Get Quote
+            </a>
+          </div>
+          <div class="product-card">
+            <img src="images/qqq.png" onclick="openModal(this.src)" />
+            <h3>Plinth Sheet</h3>
+
+            <a
+              href="https://wa.me/917994565934?text=I am interested in Plinth Sheet"
+              class="product-btn"
+              target="_blank"
+            >
+              Get Quote
+            </a>
+          </div>
+          <div class="product-card">
+            <img src="images/qqq.png" onclick="openModal(this.src)" />
+            <h3>Plinth Corner Piece</h3>
+
+            <a
+              href="https://wa.me/917994565934?text=I am interested in Plinth Corner Piece"
+              class="product-btn"
+              target="_blank"
+            >
+              Get Quote
+            </a>
+          </div>
+          <div class="product-card">
+            <img src="images/qqq.png" onclick="openModal(this.src)" />
+            <h3>Column Box</h3>
+
+            <a
+              href="https://wa.me/917994565934?text=I am interested in Column Box"
+              class="product-btn"
+              target="_blank"
+            >
+              Get Quote
+            </a>
+          </div>
+          <div class="product-card">
+            <img src="images/qqq.png" onclick="openModal(this.src)" />
+            <h3>Thallu Sheet</h3>
+
+            <a
+              href="https://wa.me/917994565934?text=I am interested in Thallu Sheet"
+              class="product-btn"
+              target="_blank"
+            >
+              Get Quote
+            </a>
+          </div>
+          <div class="product-card">
+            <img src="images/qqq.png" onclick="openModal(this.src)" />
+            <h3>Scaffolder</h3>
+
+            <a
+              href="https://wa.me/917994565934?text=I am interested in Scaffolder "
+              class="product-btn"
+              target="_blank"
+            >
+              Get Quote
+            </a>
+          </div>
+          <div class="product-card">
+            <img src="images/qqq.png" onclick="openModal(this.src)" />
+            <h3>Scaffolder Step(Sheet)</h3>
+
+            <a
+              href="https://wa.me/917994565934?text=I am interested in Scaffolder Step(Sheet)"
+              class="product-btn"
+              target="_blank"
+            >
+              Get Quote
+            </a>
+          </div>
+
+          <div class="product-card">
+            <img src="images/qqq.png" onclick="openModal(this.src)" />
+            <h3>Thallu Sheet</h3>
+
+            <a
+              href="https://wa.me/917994565934?text=I am interested in Thallu Sheet"
               class="product-btn"
               target="_blank"
             >
@@ -163,9 +296,29 @@
 
         document.getElementById("modalImg").src = src;
       }
+      let scale = 1;
+
+      document
+        .getElementById("modalImg")
+        .addEventListener("wheel", function (e) {
+          e.preventDefault();
+
+          if (e.deltaY < 0) {
+            scale += 0.1;
+          } else {
+            scale -= 0.1;
+          }
+
+          if (scale < 1) scale = 1;
+
+          this.style.transform = `scale(${scale})`;
+        });
 
       function closeModal() {
         document.getElementById("modal").style.display = "none";
+
+        scale = 1;
+        document.getElementById("modalImg").style.transform = "scale(1)";
       }
 
       function searchProducts() {
