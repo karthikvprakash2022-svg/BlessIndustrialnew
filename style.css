@@ -1538,3 +1538,52 @@ header.scrolled {
 .logo-area h1 {
   margin: 0;
 }
+@media (max-width: 768px) {
+
+  .service-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .services-header h2 {
+    font-size: 38px;
+  }
+
+  .services-header p {
+    font-size: 16px;
+  }
+
+  .services-intro {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .intro-box {
+    width: 100%;
+  }
+
+  .service-card {
+    min-height: 220px;
+    padding: 25px;
+  }
+
+  .service-card h3 {
+    font-size: 28px;
+  }
+
+  .service-card p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .main-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
