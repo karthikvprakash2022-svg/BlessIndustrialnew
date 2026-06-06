@@ -308,12 +308,61 @@ header h1 {
 }
 
 .service-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(12px);
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   padding: 40px;
   border-radius: 20px;
   transition: 0.4s;
+  overflow: hidden;
+}
+
+.roofing {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/2.jpg") !important;
+  background-size: cover;
+  background-position: center;
+}
+
+.shutter {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/eee.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.pipe {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/pipe.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.sheet {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/sheet.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.fabrication {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/fabrication.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.jacky {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/jacky.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .service-card:hover {
@@ -562,7 +611,6 @@ footer {
 .service-card {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(12px);
   padding: 40px;
   border-radius: 20px;
   transition: 0.4s;
@@ -709,20 +757,20 @@ footer {
 .modal {
   display: none;
   position: fixed;
+  inset: 0;
   z-index: 9999;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.92);
+  background: rgba(0, 0, 0, 0.95);
   justify-content: center;
   align-items: center;
 }
 
 .modal-content {
-  max-width: 85%;
-  max-height: 85%;
+  max-width: 90%;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
   border-radius: 14px;
+  object-fit: contain;
 }
 
 .close-modal {
@@ -1538,52 +1586,66 @@ header.scrolled {
 .logo-area h1 {
   margin: 0;
 }
-@media (max-width: 768px) {
 
+@media (max-width: 768px) {
   .service-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-
   .services-header h2 {
     font-size: 38px;
   }
-
   .services-header p {
     font-size: 16px;
   }
-
   .services-intro {
     flex-direction: column;
     gap: 15px;
   }
-
   .intro-box {
     width: 100%;
   }
-
   .service-card {
     min-height: 220px;
     padding: 25px;
   }
-
   .service-card h3 {
     font-size: 28px;
   }
-
   .service-card p {
     font-size: 16px;
   }
 }
-@media (max-width: 768px) {
 
+@media (max-width: 768px) {
   header {
     flex-direction: column;
     gap: 15px;
   }
-
   .main-nav {
     flex-wrap: wrap;
     justify-content: center;
   }
+}
+
+#toast {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  background: #111;
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  z-index: 9999;
+}
+
+#toast.show {
+  opacity: 1;
+  visibility: visible;
 }
